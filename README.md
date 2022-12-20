@@ -68,10 +68,10 @@ kubectl create secret generic crossplane-demo-aws-credentials -n crossplane-syst
 kubectl apply -f templates/providerconfig.yaml
 ```
 
-## Create the EC2 instance and VPC
+## Create the infrastructure
 
 ```bash
-kubectl apply -f templates/ec2.yaml
+kubectl apply -f templates/ec2.yaml && \
 kubectl apply -f templates/vpc.yaml
 ```
 
@@ -79,4 +79,30 @@ kubectl apply -f templates/vpc.yaml
 
 ```bash
 kubectl get instance,vpc
+```
+
+## Delete infrastructure
+
+```bash
+kubectl delete -f templates/ec2.yaml && \
+kubectl delete -f templates/vpc.yaml
+```
+
+## Check deleted infrastructure
+
+```bash
+kubectl get instance,vpc
+```
+
+## Remove Provider and ProviderConfig
+
+```bash
+kubectl delete -f templates/providerconfig.yaml && \
+kubectl delete -f templates/provider.yaml
+```
+
+check that all api resources are deleted as well
+
+```bash
+kubectl api-resources | grep aws
 ```
