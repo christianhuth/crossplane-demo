@@ -10,10 +10,5 @@ spec:
     enableDnsSupport: true
     instanceTenancy: default
     region: eu-central-1
-    tagSpecifications:
-      - resourceType: instance
-        tags:
-          - key: demo
-            value: crossplane
   providerConfigRef:
     name: crossplane-demo-aws
