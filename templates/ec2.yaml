@@ -11,5 +11,11 @@ spec:
     tags:
       - key: demo
         value: crossplane
+      - key: crossplane-kind
+        value: instance.ec2.aws.crossplane.io
+      - key: crossplane-name
+        value: crossplane-demo-aws-ec2
+      - key: crossplane-providerconfig
+        value: crossplane-demo-aws
   providerConfigRef:
     name: crossplane-demo-aws
