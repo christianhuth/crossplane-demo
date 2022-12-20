@@ -59,7 +59,7 @@ kubectl api-resources | grep aws
 ```bash
 AWS_PROFILE=default && echo -e "[default]\naws_access_key_id = $(aws configure get aws_access_key_id --profile $AWS_PROFILE)\naws_secret_access_key = $(aws configure get aws_secret_access_key --profile $AWS_PROFILE)" > creds.conf
 
-kubectl create secret generic aws-credentials -n crossplane-system --from-file=creds=./creds.conf
+kubectl create secret generic crossplane-demo-aws-credentials -n crossplane-system --from-file=creds=./creds.conf
 ```
 
 ## Configure the Provider
