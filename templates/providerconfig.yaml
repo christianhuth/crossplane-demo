@@ -1,7 +1,7 @@
 apiVersion: aws.crossplane.io/v1beta1
 kind: ProviderConfig
 metadata:
-  name: aws
+  name: crossplane-demo-aws
 spec:
   credentials:
     source: Secret
