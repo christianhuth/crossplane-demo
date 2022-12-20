@@ -67,3 +67,16 @@ kubectl create secret generic crossplane-demo-aws-credentials -n crossplane-syst
 ```bash
 kubectl apply -f templates/providerconfig.yaml
 ```
+
+## Create the EC2 instance and VPC
+
+```bash
+kubectl apply -f templates/ec2.yaml
+kubectl apply -f templates/vpc.yaml
+```
+
+## Check created infrastructure
+
+```bash
+kubectl get instance,vpc
+```
