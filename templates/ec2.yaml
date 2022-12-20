@@ -9,13 +9,13 @@ spec:
     instanceType: t2.micro
     region: eu-central-1
     tags:
-      - key: demo
-        value: crossplane
       - key: crossplane-kind
         value: instance.ec2.aws.crossplane.io
       - key: crossplane-name
         value: crossplane-demo-aws-ec2
       - key: crossplane-providerconfig
         value: crossplane-demo-aws
+      - key: demo
+        value: crossplane
   providerConfigRef:
     name: crossplane-demo-aws
