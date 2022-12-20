@@ -22,7 +22,7 @@ curl -sL https://raw.githubusercontent.com/crossplane/crossplane/master/install.
 
 # Setup for our Demonstration on AWS
 
-Disclaimer: Setting up AWS CLI is not part of this demonstration.
+⚠️ Setting up AWS CLI is not part of this demonstration. ⚠️
 
 ## Install AWS Provider
 
