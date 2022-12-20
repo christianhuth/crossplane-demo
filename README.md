@@ -17,4 +17,18 @@ see https://docs.crossplane.io/v1.10/getting-started/install-configure/ for more
 curl -sL https://raw.githubusercontent.com/crossplane/crossplane/master/install.sh | sh
 ```
 
+## Install AWS Provider
+
+### Using the CLI
+
+```bash
+kubectl crossplane install provider xpkg.upbound.io/crossplane-contrib/provider-aws:v0.34.0
+```
+
+### Using the Template
+
+```bash
+kubectl apply -f templates/provider.yaml
+```
+
 ## Create Secrets for accessing Provider
