@@ -26,7 +26,7 @@ curl -sL https://raw.githubusercontent.com/crossplane/crossplane/master/install.
 
 ## Install AWS Provider
 
-See [https://marketplace.upbound.io/providers/crossplane-contrib/provider-aws/v0.34.0](here) for complete Docs about Provider.
+See [here](https://marketplace.upbound.io/providers/crossplane-contrib/provider-aws/v0.34.0) for complete Docs about Provider.
 
 ### Using the CLI
 
