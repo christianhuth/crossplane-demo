@@ -8,10 +8,8 @@ spec:
     imageId: ami-06ce824c157700cd2
     instanceType: t2.micro
     region: eu-central-1
-    tagSpecifications:
-      - resourceType: instance
-        tags:
-          - key: demo
-            value: crossplane
+    tags:
+      - key: demo
+        value: crossplane
   providerConfigRef:
     name: crossplane-demo-aws
