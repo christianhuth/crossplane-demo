@@ -1,0 +1,17 @@
+---
+apiVersion: ec2.aws.crossplane.io/v1alpha1
+kind: Instance
+metadata:
+  name: crossplane-demo-ec2
+spec:
+  forProvider:
+    imageId: ami-06ce824c157700cd2
+    instanceMarketOptions:
+      marketType: spot
+      spotOptions:
+        instanceInterruptionBehavior: hibernate
+        spotInstanceType: persistent
+    instanceType: t2.micro
+    region: eu-central-1
+  providerConfigRef:
+    name: crossplane-demo-aws
