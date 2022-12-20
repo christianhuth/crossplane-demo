@@ -2,6 +2,8 @@
 
 This is a small demonstration project for deploying a VPC and an EC2 instance on AWS using [Crossplane](https://github.com/crossplane/crossplane).
 
+# Basic Setup of the Crossplane Environment
+
 ## Install Crossplane inside Kubernetes Cluster
 
 ```bash
@@ -16,6 +18,8 @@ see https://docs.crossplane.io/v1.10/getting-started/install-configure/ for more
 ```bash
 curl -sL https://raw.githubusercontent.com/crossplane/crossplane/master/install.sh | sh
 ```
+
+# Setup for our Demonstration on AWS
 
 ## Install AWS Provider
 
