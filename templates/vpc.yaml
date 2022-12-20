@@ -9,6 +9,6 @@ spec:
     enableDnsHostNames: true
     enableDnsSupport: true
     instanceTenancy: default
-    region: us-west-1
+    region: eu-central-1
   providerConfigRef:
     name: example
