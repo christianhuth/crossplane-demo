@@ -29,14 +29,25 @@ curl -sL https://raw.githubusercontent.com/crossplane/crossplane/master/install.
 ```bash
 # default method using the provided package
 kubectl crossplane install provider xpkg.upbound.io/crossplane-contrib/provider-aws:v0.34.0
-# alternative method using the docker image
-# kubectl crossplane install provider crossplane/provider-aws:v0.34.0
 ```
 
 ### Using the Template
 
 ```bash
 kubectl apply -f templates/provider.yaml
+```
+
+## Check the installed Provider
+
+```bash
+kubectl get providers
+kubectl describe providers crossplane-contrib-provider-aws
+```
+
+As soon as the Provider is healthy you can check the provided CRDs:
+
+```bash
+kubectl api-resources | grep aws
 ```
 
 ## Create Secrets for accessing Provider
