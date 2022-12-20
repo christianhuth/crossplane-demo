@@ -11,4 +11,4 @@ spec:
     instanceTenancy: default
     region: eu-central-1
   providerConfigRef:
-    name: example
+    name: crossplane-demo-aws
