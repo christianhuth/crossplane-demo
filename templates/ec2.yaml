@@ -2,7 +2,7 @@
 apiVersion: ec2.aws.crossplane.io/v1alpha1
 kind: Instance
 metadata:
-  name: crossplane-demo-ec2
+  name: crossplane-demo-aws-ec2
 spec:
   forProvider:
     imageId: ami-06ce824c157700cd2
